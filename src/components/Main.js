@@ -5,6 +5,7 @@ import Register from "./Forms/Register";
 
 import {auth} from '../config/firebase';
 import Tracker from "./Tracker/Tracker";
+import Spinner from "../assets/loader.gif";
 
 
 
@@ -39,6 +40,16 @@ const formSwitcher=(action) =>{
     }
 
     const form = !formSwitchervalue ? <Login /> : <Register />
+
+     if(user === 1){
+        return(
+            <div className="main">
+                <div className="Spinner">
+                    <img src={Spinner} alt="Spinner" className="ImgSpinner" />
+                </div>
+            </div>
+        );
+     }
 
     return(
         <>
