@@ -1,15 +1,135 @@
+.trackerBlock{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    margin: 100px auto;
+    display: table;
+
+}
+
+
+
 .header{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0;
     
 }
 
-.logout{
-    padding: 25px;
-    border-radius: 4px;
-    width: 10%;
+.totalMoney{
+    color: white;
     font-size: 20px;
-    margin-top: 5px;
+    margin: 0 0 10px;
+}
+
+.newTrans{
+    box-sizing: border-box;
+    text-align: center;
+    color: #18bd3c;
+    display: table;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    margin: 0 0 10px;
+    font-size: 15px;
+
+}
+
+.newTrans input[type="text"],
+.newTrans select{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    padding: 7px;
+}
+.newTrans input[type="text"]:focus,
+.newTrans select:focus{
+    outline: none;
+}
+
+.inputGroup{
+    display: flex;
+    justify-content: center;
+}
+
+.addTrans{
+    text-align: center;
+    color: white;
+    border-radius: 3px;
+    background-color:#425f9c;
+    border: 0;
+    margin: 5px 0 0;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.addTrans:hover{
+    background-color: #274177;
+
+}
+.addTrans:focus{
+    outline: none;
+}
+
+.latestTransaction{
+    margin: 10px 0 0 0;
+    background-color: white;
+    color:black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
+}
+
+.latestTransaction p{
+    font-weight: bold;
+    padding: 0 0 5px;
+    margin: 0;
+    font-size: 13px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li:last-child{
+    border-bottom: 0;
+    padding: 5px 0 0;
+}
+
+.expense {
+    color: red;
+}
+
+.deposit {
+    color: green;
+}
+
+
+
+
+.logout{
+    text-align: center;
+    color: black;
+    border-radius: 3px;
+    background-color:#acbbdc;
+    border: 0;
+    margin: 5px 0 0;
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
 }
