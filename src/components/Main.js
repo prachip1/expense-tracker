@@ -34,7 +34,7 @@ export default function Main(){
  
 
 const formSwitcher=(action) =>{
-        console.log(action);
+        
      setFormSwitcherValue( action === 'register'? true : false);
       
     }
